@@ -16,12 +16,19 @@
         you last used simply stays in hand.
       * Nothing else is touched. Every other slot stays exactly as you have it.
 
-    How to install
-      1. Load LuAshitaCast once in game (/addon load luashitacast). It makes a
-         folder for you: Game\config\addons\luashitacast\<YourName>_<Id>\
-      2. Copy this file into that folder once per job you want it on, named
-         after the job: WHM.lua, BLM.lua, RDM.lua, SMN.lua, BRD.lua, and so on.
-      3. Change job or type /lac load. That is all.
+    How to install (no folder needed)
+      1. Go to Game\config\addons\luashitacast\ (make the luashitacast folder
+         there if it does not exist yet).
+      2. Copy this file in once per job, named YourName_JOB.lua, for example
+         Eveebevee_WHM.lua, Eveebevee_BLM.lua, Eveebevee_RDM.lua. The name
+         part is your character's name exactly as it appears in game.
+      3. In game: /addon load luashitacast, then /lac load. Changing job
+         picks up the matching file on its own from then on.
+
+    The other way: in game type /lac newlua. That creates the per character
+    folder Game\config\addons\luashitacast\YourName_<Id>\ with a blank
+    JOB.lua for the job you are on; replace that blank file with this one.
+    LuAshitaCast never creates the folder by itself, it only looks for one.
 
     A staff swap mid fight resets your TP, which is nothing for a mage, but
     if you melee on RDM you may want to leave this off that job.

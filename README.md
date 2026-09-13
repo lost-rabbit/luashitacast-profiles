@@ -19,13 +19,20 @@ Elemental staves for any mage job.
   refresh.
 - Nothing else is touched: every armour slot stays as you have it.
 
-### Install
+### Install (no folder needed)
 
-1. In game, `/addon load luashitacast` once. It creates your profile folder:
-   `Game\config\addons\luashitacast\<YourName>_<Id>\`
-2. Copy `Staves.lua` into that folder once per job you want it on, named
-   after the job: `WHM.lua`, `BLM.lua`, `RDM.lua`, `SMN.lua`, `BRD.lua`.
-3. Change job, or type `/lac load`.
+1. Open `Game\config\addons\luashitacast\`. If the `luashitacast` folder is
+   not there yet, make it.
+2. Copy `Staves.lua` in once per job, named `YourName_JOB.lua`, for example
+   `Eveebevee_WHM.lua`, `Eveebevee_BLM.lua`, `Eveebevee_RDM.lua`. The name is
+   your character's name exactly as it shows in game.
+3. In game: `/addon load luashitacast`, then `/lac load`. From then on a job
+   change picks up the matching file by itself.
+
+The other way: type `/lac newlua` in game. That creates the per character
+folder `Game\config\addons\luashitacast\YourName_<Id>\` with a blank
+`JOB.lua` for the job you are on; replace that blank file with this one.
+LuAshitaCast never creates the folder on its own, it only looks for one.
 
 ### Settings
 
