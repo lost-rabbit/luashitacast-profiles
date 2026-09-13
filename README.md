@@ -19,7 +19,16 @@ Elemental staves for any mage job.
   refresh.
 - Nothing else is touched: every armour slot stays as you have it.
 
-### Install (no folder needed)
+### Install with the installer
+
+Download `Staves.zip` from the latest release, extract it, and run
+`install.bat`. It finds your HorizonXI game folder, asks for your character
+name and the jobs you want, puts the profile exactly where LuAshitaCast looks
+for it, and sets the addon to load with the game. Then type `/lac load` in
+game. Run it again any time to refresh; an older profile of yours is kept as
+a `.bak` next to the new one.
+
+### Install by hand (no folder needed)
 
 1. Open `Game\config\addons\luashitacast\`. If the `luashitacast` folder is
    not there yet, make it.
